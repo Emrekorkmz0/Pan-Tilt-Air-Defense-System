@@ -7,17 +7,17 @@ It integrates a PID controller to ensure smooth and accurate movement of the pan
 
 ## Features
 
-- **Real-time face detection and tracking using Haar Cascade Classifier.
+- **Real-time face detection and tracking using Haar Cascade Classifier**.
 
-- **PID controller for precise motor control.
+- **PID controller for precise motor control**.
 
-- **Arduino communication over serial port for motor commands.
+- **Arduino communication over serial port for motor commands**.
 
-- **Adjustable PID tuning parameters for stability and responsiveness.
+- **Adjustable PID tuning parameters for stability and responsiveness**.
 
-- **Efficient handling of motor commands via a queue, ensuring smooth operation.
+- **Efficient handling of motor commands via a queue, ensuring smooth operation**.
 
-Requirements
+## Requirements
 
 Python 3.x
 
