@@ -19,64 +19,54 @@ It integrates a PID controller to ensure smooth and accurate movement of the pan
 
 ## Requirements
 
-Python 3.x
+- Python 3.x
 
-OpenCV (cv2) library for computer vision
+- OpenCV (cv2) library for computer vision
 
-pySerial library for communication with Arduino
+- pySerial library for communication with Arduino
 
-Haar Cascade XML file for face detection (haarcascade_frontalface_default.xml)
+- Haar Cascade XML file for face detection (haarcascade_frontalface_default.xml)
 
-Installation
+## Installation
 
 Clone the repository:
 
-git clone https://github.com/yourusername/pan-tilt-air-defense-system.git
-cd pan-tilt-air-defense-system
+- git clone https://github.com/yourusername/pan-tilt-air-defense-system.git
+  cd pan-tilt-air-defense-system
 
 
-Install dependencies:
+## Install dependencies:
 
-pip install opencv-python pyserial
+- pip install opencv-python pyserial
 
 
-Download the Haar Cascade Classifier:
+**Download the Haar Cascade Classifier**:
 
 Download the file haarcascade_frontalface_default.xml from OpenCV GitHub repository
  and place it in the same directory as the script.
 
-Setup Arduino:
+## Setup Arduino:
 
 Connect an Arduino-based pan-tilt motor system. Make sure the correct serial port is configured in the script (e.g., /dev/ttyUSB0 for Linux or COMx for Windows).
 
-Usage
+## Usage
 
-Run the script:
+**Run the script:**
 
-python pan_tilt_tracking.py
+**python pan_tilt_tracking.py**
 
-
-Exit the program:
-
-To stop the tracking, press the ESC key.
-
-System Configuration
-Camera
-
-The system uses the default webcam (device 0) with a resolution of 640x480 pixels.
-
-Arduino Communication
+## Arduino Communication
 
 The Arduino expects commands in the format of two comma-separated values (for X and Y motor angles) sent over the serial port. These are calculated using the PID controller based on the angular error between the detected face and the center of the camera's view.
 
-PID Controller
+## PID Controller
 
-The PID controller is configured with the following initial values:
+**The PID controller is configured with the following initial values:**
 
-kp = 1.2
+- kp = 1.2
 
-ki = 0.02
+- ki = 0.02
 
-kd = 0.10
+- kd = 0.10
 
 These values can be adjusted for different performance characteristics.
