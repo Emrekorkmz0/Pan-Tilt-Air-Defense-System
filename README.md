@@ -1,11 +1,11 @@
 # Pan-Tilt Air Defense System
-Overview
+## Overview
 
 The Pan-Tilt Air Defense System is a computer vision-based project designed to track and follow targets using facial recognition. This system utilizes a camera and an Arduino-based pan-tilt mechanism to autonomously track and center a detected face on the screen.
 
 It integrates a PID controller to ensure smooth and accurate movement of the pan-tilt system and employs the OpenCV library for real-time facial recognition. The system continuously adjusts the motors to keep the detected face centered while avoiding unnecessary movements using a deadband approach.
 
-Features
+## Features
 
 Real-time face detection and tracking using Haar Cascade Classifier.
 
